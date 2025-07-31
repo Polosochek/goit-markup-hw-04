@@ -17,6 +17,7 @@ ul ,ol{
 }
 .header-m{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);  
 }
 .header-m .container { 
     display: flex;
@@ -58,6 +59,25 @@ margin-right: 76px;
 .logo-span{
     color: #2e2f42;
 }
+.ul-header>li:nth-child(1) a{
+    position: relative;
+    color: #404bbf ;
+transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.ul-header>li:nth-child(1) a::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: 404bbf;
+border-radius: 2px;
+}
+.ul-header>li:nth-child(2) a{
+transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .list-a{
     font-weight: 500;
     font-size: 16px;
